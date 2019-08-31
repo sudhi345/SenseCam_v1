@@ -1,0 +1,199 @@
+EESchema Schematic File Version 4
+LIBS:SenseCam_v1-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2019-08-27"
+Rev ""
+Comp "Appiko"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32H750VB:STM32H750VB U1
+U 1 1 5D666248
+P 5700 3750
+F 0 "U1" H 5700 3850 50  0000 C CNN
+F 1 "STM32H750VB" H 5700 3650 50  0000 C CNN
+F 2 "lib_fp:LQFP-100_14x14mm_P0.5mm" H 6400 3350 50  0001 C CNN
+F 3 "" H 6400 3350 50  0001 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2550 5650 2450
+Wire Wire Line
+	5650 2450 5700 2450
+Wire Wire Line
+	5850 2450 5850 2550
+Wire Wire Line
+	5800 2550 5800 2450
+Connection ~ 5800 2450
+Wire Wire Line
+	5800 2450 5850 2450
+Wire Wire Line
+	5750 2550 5750 2450
+Connection ~ 5750 2450
+Wire Wire Line
+	5750 2450 5800 2450
+Wire Wire Line
+	5700 2550 5700 2450
+Connection ~ 5700 2450
+Wire Wire Line
+	5700 2450 5750 2450
+Wire Wire Line
+	5750 2450 5750 2350
+Wire Wire Line
+	5750 2350 5900 2350
+Text Label 5900 2350 2    39   ~ 0
+VDD
+Wire Wire Line
+	5850 4950 5850 5050
+Wire Wire Line
+	5850 5050 5900 5050
+Wire Wire Line
+	6050 5050 6050 4950
+Wire Wire Line
+	5900 4950 5900 5050
+Connection ~ 5900 5050
+Wire Wire Line
+	5900 5050 5950 5050
+Wire Wire Line
+	5950 4950 5950 5050
+Connection ~ 5950 5050
+Wire Wire Line
+	5950 5050 6000 5050
+Wire Wire Line
+	6000 4950 6000 5050
+Connection ~ 6000 5050
+Wire Wire Line
+	6000 5050 6050 5050
+Wire Wire Line
+	5950 5050 5950 5150
+$Comp
+L power:GND #PWR0101
+U 1 1 5D666B07
+P 5950 5150
+F 0 "#PWR0101" H 5950 4900 50  0001 C CNN
+F 1 "GND" H 5955 4977 50  0000 C CNN
+F 2 "" H 5950 5150 50  0001 C CNN
+F 3 "" H 5950 5150 50  0001 C CNN
+	1    5950 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4950 6200 5050
+Wire Wire Line
+	6200 5050 6050 5050
+Connection ~ 6050 5050
+Wire Wire Line
+	5950 2550 5950 2450
+Wire Wire Line
+	5950 2450 5850 2450
+Connection ~ 5850 2450
+$Comp
+L Device:C_Small C1
+U 1 1 5D66703E
+P 900 1100
+F 0 "C1" V 1000 1050 50  0000 L CNN
+F 1 "10uF" V 800 1000 50  0000 L CNN
+F 2 "" H 900 1100 50  0001 C CNN
+F 3 "~" H 900 1100 50  0001 C CNN
+	1    900  1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5D6670C4
+P 1300 1200
+F 0 "C2" V 1400 1150 50  0000 L CNN
+F 1 "2.2uF" V 1200 1100 50  0000 L CNN
+F 2 "" H 1300 1200 50  0001 C CNN
+F 3 "~" H 1300 1200 50  0001 C CNN
+	1    1300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5D667105
+P 1700 1200
+F 0 "C3" V 1800 1150 50  0000 L CNN
+F 1 "2.2uF" V 1600 1100 50  0000 L CNN
+F 2 "" H 1700 1200 50  0001 C CNN
+F 3 "~" H 1700 1200 50  0001 C CNN
+	1    1700 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1000 900  800 
+Wire Wire Line
+	900  1250 900  1200
+$Comp
+L power:GND #PWR0102
+U 1 1 5D6675DE
+P 900 1250
+F 0 "#PWR0102" H 900 1000 50  0001 C CNN
+F 1 "GND" H 905 1077 50  0000 C CNN
+F 2 "" H 900 1250 50  0001 C CNN
+F 3 "" H 900 1250 50  0001 C CNN
+	1    900  1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5D66764B
+P 1500 1400
+F 0 "#PWR0103" H 1500 1150 50  0001 C CNN
+F 1 "GND" H 1505 1227 50  0000 C CNN
+F 2 "" H 1500 1400 50  0001 C CNN
+F 3 "" H 1500 1400 50  0001 C CNN
+	1    1500 1400
+	1    0    0    -1  
+$EndComp
+Text Label 900  800  3    50   ~ 0
+VDD
+Wire Wire Line
+	1700 1400 1500 1400
+Wire Wire Line
+	1500 1400 1300 1400
+Connection ~ 1500 1400
+Text Label 5150 2300 3    31   ~ 0
+VCAP1
+Text Label 5250 2300 3    31   ~ 0
+VCAP2
+Text Label 1300 850  3    50   ~ 0
+VCAP1
+Text Label 1700 850  3    50   ~ 0
+VCAP2
+Wire Wire Line
+	5150 2300 5150 2550
+Wire Wire Line
+	5250 2300 5250 2550
+Wire Wire Line
+	1300 850  1300 1100
+Wire Wire Line
+	1700 850  1700 1100
+Wire Wire Line
+	1700 1300 1700 1400
+Wire Wire Line
+	1300 1300 1300 1400
+Text Notes 750  1350 1    31   ~ 0
+Decoupling Capacitor
+Text Notes 1250 750  0    31   ~ 0
+Main regulator\nstabilization capacitors
+Wire Notes Line
+	650  1650 1850 1650
+Wire Notes Line
+	1850 1650 1850 600 
+Wire Notes Line
+	1850 600  650  600 
+Wire Notes Line
+	650  600  650  1650
+Wire Notes Line
+	1100 600  1100 1650
+$EndSCHEMATC
